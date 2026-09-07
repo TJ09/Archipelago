@@ -285,6 +285,7 @@ class MMBN6World(World):
         add_rule(self.multiworld.get_location(LocationName.Green_Area_2_BMD_2, self.player), has_rush_food)
         add_rule(self.multiworld.get_location(LocationName.Sky_Area_1_BMD_2, self.player), has_rush_food)
         add_rule(self.multiworld.get_location(LocationName.ACDC_Area_BMD_1, self.player), has_rush_food)
+        add_rule(self.multiworld.get_location(LocationName.Undernet_1_BMD, self.player), has_rush_food)
         add_rule(self.multiworld.get_location(LocationName.Undernet_Zero_Heel_Navi, self.player), has_rush_food)
 
         # Set Link Navi requirements (Gregar)
@@ -1019,7 +1020,9 @@ class MMBN6World(World):
             "include_ex_bosses",
             "include_sp_bosses",
             "include_virus_battler",
-            "trade_quest_hinting"
+            "trade_quest_hinting",
+            "include_bass_bx",
+            "include_protoman_fz"
         )
 
     def explore_score(self, state):

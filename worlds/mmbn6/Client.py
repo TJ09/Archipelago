@@ -35,9 +35,9 @@ RAM_ADDRS = {
     # 0x38: ChargeMan Minigame
     "game_state": (0x1B80, 1, "EWRAM"),
     #
-    "main_area": (0x1B84, 1, "IWRAM"),
+    "main_area": (0x1B84, 1, "EWRAM"),
     #
-    "sub_area": (0x1B85, 1, "IWRAM"),
+    "sub_area": (0x1B85, 1, "EWRAM"),
     # Start location of library array
     "chip_library_start": (0x223C, 1, "EWRAM"),
     "key_item_amount_start": (0x3134, 1, "EWRAM"),
@@ -639,6 +639,6 @@ class MMBN6Client(BizHawkClient):
             "key": f"mmbn6_room_{ctx.team}_{ctx.slot}",
             "default": 0,
             "want_reply": False,
-            "operations": [{"operation": "replace", "value": f"{main_area_id:02x} {sub_area_id:02x}"}]
+            "operations": [{"operation": "replace", "value": f"{main_area_id:02X} {sub_area_id:02X}"}]
         }])
 
