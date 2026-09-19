@@ -93,7 +93,7 @@ class ItemName():
     CrcusMan_star = "CrcusMan *"
     DblPoint_star = "DblPoint *"
     Discord_S = "Discord S"
-    Diveman_star = "Diveman *"
+    Diveman_star = "DiveMan *"
     DolThdr1_A = "DolThdr1 A"
     DrilArm_M = "DrilArm M"
     DublShot_C = "DublShot C"
